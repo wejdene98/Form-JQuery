@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- import JqueryUI  -->
+    <link
+      rel="stylesheet"
+      href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form name="contact" id="contact">
+        <div class="form-group">
+          <label for="fullname">Fullname*</label>
+          <input type="text" name="fullname" id="fullname" />
+          <small class="error" id="fullname-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age*</label>
+          <input type="date" name="age" id="age" />
+          <small class="error" id="age-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="">phone*</label>
+          <input type="phone" name="phone" id="phone" />
+          <small class="error" id="phone-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">email*</label>
+          <input type="text" name="email" id="email" />
+          <small class="error" id="email-error"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="">password*</label>
+          <input type="password" name="password" id="password" />
+          <small class="error" id="password-error"></small>
+        </div>
+
+        <div class="form-group" style="width: 100%">
+          <label for="Posts">Posts*</label>
+
+          <select name="Posts" class="tech" id="postsList">
+            <option value="">Select an option</option>
+          </select>
+          <small class="error" id="postsList-error"></small>
+        </div>
+
+        <div
+          class="form-group"
+          style="flex-direction: row; justify-content: space-between"
+        >
+          <label for="">Has experience* :</label>
+
+          <label for="experienceYes">Yes</label>
+          <input
+            type="radio"
+            name="experience"
+            value="Yes"
+            id="experienceYes"
+            style="width: 5%"
+          />
+
+          <label for="experienceNo">No</label>
+          <input
+            type="radio"
+            name="experience"
+            value="No"
+            id="experienceNo"
+            style="width: 5%"
+            checked
+          />
+        </div>
+
+        <div
+          class="form-group"
+          id="describeExperienceSection"
+          style="display: none"
+        >
+          <label for="describeExperience">Describe your experience</label>
+          <textarea
+            name="describeExperience"
+            id="describeExperience"
+            rows="2"
+          ></textarea>
+        </div>
+
+        <button type="button" id="btn_submit">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
